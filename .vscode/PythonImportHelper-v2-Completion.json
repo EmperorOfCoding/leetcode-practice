@@ -1,0 +1,47 @@
+[
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "twosum.app",
+        "description": "twosum.app",
+        "peekOfCode": "class Solution(object): #hashMap\n    def twoSum(self, nums, target):\n        hashmap = {}\n        for i, num in enumerate(nums):\n            diff = target - num\n            if diff in hashmap:\n                return [hashmap[diff], i]\n            hashmap[num] = i\nsolucao = Solution()",
+        "detail": "twosum.app",
+        "documentation": {}
+    },
+    {
+        "label": "solucao",
+        "kind": 5,
+        "importPath": "twosum.app",
+        "description": "twosum.app",
+        "peekOfCode": "solucao = Solution()\nresultado = solucao.twoSum([2, 4, 5, 7, 5], 6)\nprint(resultado)\n#nums = [2, 7, 11, 15]\n#target = 9",
+        "detail": "twosum.app",
+        "documentation": {}
+    },
+    {
+        "label": "resultado",
+        "kind": 5,
+        "importPath": "twosum.app",
+        "description": "twosum.app",
+        "peekOfCode": "resultado = solucao.twoSum([2, 4, 5, 7, 5], 6)\nprint(resultado)\n#nums = [2, 7, 11, 15]\n#target = 9",
+        "detail": "twosum.app",
+        "documentation": {}
+    },
+    {
+        "label": "#nums",
+        "kind": 5,
+        "importPath": "twosum.app",
+        "description": "twosum.app",
+        "peekOfCode": "#nums = [2, 7, 11, 15]\n#target = 9",
+        "detail": "twosum.app",
+        "documentation": {}
+    },
+    {
+        "label": "#target",
+        "kind": 5,
+        "importPath": "twosum.app",
+        "description": "twosum.app",
+        "peekOfCode": "#target = 9",
+        "detail": "twosum.app",
+        "documentation": {}
+    }
+]
