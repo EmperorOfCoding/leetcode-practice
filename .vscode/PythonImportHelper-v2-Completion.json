@@ -2,9 +2,63 @@
     {
         "label": "Solution",
         "kind": 6,
+        "importPath": "palindromenumber.app",
+        "description": "palindromenumber.app",
+        "peekOfCode": "class Solution(object):\n    def isPalindrome(self, x):\n        if x < 0:\n            return False\n        elif x == 0:\n            return True\n        else:\n            digitos_normais = [int(digito) for digito in str(x)]\n            print(digitos_normais)\n            digitos_invertidos = [int(digito) for digito in str(x)[x::-1]]",
+        "detail": "palindromenumber.app",
+        "documentation": {}
+    },
+    {
+        "label": "solucao",
+        "kind": 5,
+        "importPath": "palindromenumber.app",
+        "description": "palindromenumber.app",
+        "peekOfCode": "solucao = Solution()\nresultado = solucao.isPalindrome(656)\nprint(resultado)",
+        "detail": "palindromenumber.app",
+        "documentation": {}
+    },
+    {
+        "label": "resultado",
+        "kind": 5,
+        "importPath": "palindromenumber.app",
+        "description": "palindromenumber.app",
+        "peekOfCode": "resultado = solucao.isPalindrome(656)\nprint(resultado)",
+        "detail": "palindromenumber.app",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "romantointeger.app",
+        "description": "romantointeger.app",
+        "peekOfCode": "class Solution(object):\n    def romanToInt(self, s):\n        soma = 0\n        hashmap = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}\n        for i in range(len(s) - 1):\n            if hashmap[s[i]] < hashmap[s[i + 1]]:\n                soma -= hashmap[s[i]]\n            else:\n                soma += hashmap[s[i]]\n        soma += hashmap[s[-1]]",
+        "detail": "romantointeger.app",
+        "documentation": {}
+    },
+    {
+        "label": "solucao",
+        "kind": 5,
+        "importPath": "romantointeger.app",
+        "description": "romantointeger.app",
+        "peekOfCode": "solucao = Solution()\nresultado = solucao.romanToInt('MCMXCIV')\nprint(resultado)\n#:type s: str\n#:rtype: int",
+        "detail": "romantointeger.app",
+        "documentation": {}
+    },
+    {
+        "label": "resultado",
+        "kind": 5,
+        "importPath": "romantointeger.app",
+        "description": "romantointeger.app",
+        "peekOfCode": "resultado = solucao.romanToInt('MCMXCIV')\nprint(resultado)\n#:type s: str\n#:rtype: int",
+        "detail": "romantointeger.app",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
         "importPath": "twosum.app",
         "description": "twosum.app",
-        "peekOfCode": "class Solution(object): #hashMap\n    def twoSum(self, nums, target):\n        hashmap = {}\n        for i, num in enumerate(nums):\n            diff = target - num\n            if diff in hashmap:\n                return [hashmap[diff], i]\n            hashmap[num] = i\nsolucao = Solution()",
+        "peekOfCode": "class Solution(object): #hashMap\n    def twoSum(self, nums, target):\n        hashmap = {}\n        for i, num in enumerate(nums):\n            diff = target - num\n            if diff in hashmap:\n                return [hashmap[diff], i]\n            hashmap[num] = i\nsolucao = Solution()\nresultado = solucao.twoSum([2, 4, 6, 2, 5], 6)",
         "detail": "twosum.app",
         "documentation": {}
     },
@@ -13,7 +67,7 @@
         "kind": 5,
         "importPath": "twosum.app",
         "description": "twosum.app",
-        "peekOfCode": "solucao = Solution()\nresultado = solucao.twoSum([2, 4, 5, 7, 5], 6)\nprint(resultado)\n#nums = [2, 7, 11, 15]\n#target = 9",
+        "peekOfCode": "solucao = Solution()\nresultado = solucao.twoSum([2, 4, 6, 2, 5], 6)\nprint(resultado)",
         "detail": "twosum.app",
         "documentation": {}
     },
@@ -22,25 +76,7 @@
         "kind": 5,
         "importPath": "twosum.app",
         "description": "twosum.app",
-        "peekOfCode": "resultado = solucao.twoSum([2, 4, 5, 7, 5], 6)\nprint(resultado)\n#nums = [2, 7, 11, 15]\n#target = 9",
-        "detail": "twosum.app",
-        "documentation": {}
-    },
-    {
-        "label": "#nums",
-        "kind": 5,
-        "importPath": "twosum.app",
-        "description": "twosum.app",
-        "peekOfCode": "#nums = [2, 7, 11, 15]\n#target = 9",
-        "detail": "twosum.app",
-        "documentation": {}
-    },
-    {
-        "label": "#target",
-        "kind": 5,
-        "importPath": "twosum.app",
-        "description": "twosum.app",
-        "peekOfCode": "#target = 9",
+        "peekOfCode": "resultado = solucao.twoSum([2, 4, 6, 2, 5], 6)\nprint(resultado)",
         "detail": "twosum.app",
         "documentation": {}
     }
