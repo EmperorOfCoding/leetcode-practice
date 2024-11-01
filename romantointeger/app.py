@@ -19,10 +19,6 @@ class Solution(object):
 
 
 
-
-
-
-
 #Vou armazenar um dicionario com as chaves (letras romanas) e seus respectivos valores
 #A minha entrada vai ser uma string, tenho que iterar sobre cada valor da string e somar
 #Quando uma letra de menor valor vem depois de uma letra de valor maior, somamos os valores
