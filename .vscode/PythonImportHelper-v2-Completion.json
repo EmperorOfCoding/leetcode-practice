@@ -1,10 +1,18 @@
 [
     {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Solution",
         "kind": 6,
         "importPath": "longestcommonprefix.app",
         "description": "longestcommonprefix.app",
-        "peekOfCode": "class Solution(object):\n    def longestCommonPrefix(self, strs):\n        if not strs:\n            return \"\"\n        prefix = strs[0]\n        for i in range(1, len(strs)):\n            while not strs[i].startswith(prefix):\n                prefix = prefix[:-1]\n            if not prefix:\n                return \"\"",
+        "peekOfCode": "class Solution(object):\n    def longestCommonPrefix(self, strs):\n        if not strs:\n            print(\"\")\n        prefix = strs[0]\n        for i in range(1, len(strs)):\n            while not strs[i].startswith(prefix):\n                prefix = prefix[:-1]\n                if not prefix:\n                    print(\"\")",
         "detail": "longestcommonprefix.app",
         "documentation": {}
     },
@@ -13,7 +21,7 @@
         "kind": 5,
         "importPath": "longestcommonprefix.app",
         "description": "longestcommonprefix.app",
-        "peekOfCode": "solucao = Solution()\nresultado = solucao.longestCommonPrefix([\"flower\", \"flow\", \"flight\"])\nprint(resultado)\n#1 - Pegar os digitos da palavra toda",
+        "peekOfCode": "solucao = Solution()\nresultado = solucao.longestCommonPrefix(['map', 'mop', 'map'])\nprint(resultado)\n#1 - Pegar os digitos da palavra toda",
         "detail": "longestcommonprefix.app",
         "documentation": {}
     },
@@ -22,8 +30,44 @@
         "kind": 5,
         "importPath": "longestcommonprefix.app",
         "description": "longestcommonprefix.app",
-        "peekOfCode": "resultado = solucao.longestCommonPrefix([\"flower\", \"flow\", \"flight\"])\nprint(resultado)\n#1 - Pegar os digitos da palavra toda",
+        "peekOfCode": "resultado = solucao.longestCommonPrefix(['map', 'mop', 'map'])\nprint(resultado)\n#1 - Pegar os digitos da palavra toda",
         "detail": "longestcommonprefix.app",
+        "documentation": {}
+    },
+    {
+        "label": "ListNode",
+        "kind": 6,
+        "importPath": "mergetwosortedlists.app",
+        "description": "mergetwosortedlists.app",
+        "peekOfCode": "class ListNode(object):\n    def __init__(self, val=0, next=None):\n         self.val = val\n         self.next = next\nclass Solution(object):\n    def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:\n        d = ListNode()\n        cur = d\n        while list1 and list2:\n            if list1.val < list2.val:",
+        "detail": "mergetwosortedlists.app",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "mergetwosortedlists.app",
+        "description": "mergetwosortedlists.app",
+        "peekOfCode": "class Solution(object):\n    def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:\n        d = ListNode()\n        cur = d\n        while list1 and list2:\n            if list1.val < list2.val:\n                cur.next = list1\n#solucao = Solution()\n#resultado = solucao.mergeTwoLists()\n#print(resultado)",
+        "detail": "mergetwosortedlists.app",
+        "documentation": {}
+    },
+    {
+        "label": "#solucao",
+        "kind": 5,
+        "importPath": "mergetwosortedlists.app",
+        "description": "mergetwosortedlists.app",
+        "peekOfCode": "#solucao = Solution()\n#resultado = solucao.mergeTwoLists()\n#print(resultado)",
+        "detail": "mergetwosortedlists.app",
+        "documentation": {}
+    },
+    {
+        "label": "#resultado",
+        "kind": 5,
+        "importPath": "mergetwosortedlists.app",
+        "description": "mergetwosortedlists.app",
+        "peekOfCode": "#resultado = solucao.mergeTwoLists()\n#print(resultado)",
+        "detail": "mergetwosortedlists.app",
         "documentation": {}
     },
     {
@@ -105,6 +149,33 @@
         "description": "twosum.app",
         "peekOfCode": "resultado = solucao.twoSum([2, 4, 6, 2, 5], 6)\nprint(resultado)",
         "detail": "twosum.app",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "validparentheses.app",
+        "description": "validparentheses.app",
+        "peekOfCode": "class Solution(object):\n    def isValid(self, s):\n        hashmap = {\n            '(': ')',\n            '[': ']',\n            '{': '}'\n        }\n        stack = []\n        for char in s:\n            if char in hashmap:",
+        "detail": "validparentheses.app",
+        "documentation": {}
+    },
+    {
+        "label": "solucao",
+        "kind": 5,
+        "importPath": "validparentheses.app",
+        "description": "validparentheses.app",
+        "peekOfCode": "solucao = Solution()\nresultado = solucao.isValid('()[]')\nprint(resultado)\n#limite: ()[]{}\n#formatos válidos (), [], {}, ([{}])\n#Os parenteses so sao validos quando fechados por ele mesmos (o inicio fecha o final\n#Solucao: Verificar se o primeiro parenteses é igual ao ultimo parenteses (signifca que foi fechado pelo mesmo parenteses)",
+        "detail": "validparentheses.app",
+        "documentation": {}
+    },
+    {
+        "label": "resultado",
+        "kind": 5,
+        "importPath": "validparentheses.app",
+        "description": "validparentheses.app",
+        "peekOfCode": "resultado = solucao.isValid('()[]')\nprint(resultado)\n#limite: ()[]{}\n#formatos válidos (), [], {}, ([{}])\n#Os parenteses so sao validos quando fechados por ele mesmos (o inicio fecha o final\n#Solucao: Verificar se o primeiro parenteses é igual ao ultimo parenteses (signifca que foi fechado pelo mesmo parenteses)",
+        "detail": "validparentheses.app",
         "documentation": {}
     }
 ]

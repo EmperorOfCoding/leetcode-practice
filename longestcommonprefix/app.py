@@ -2,8 +2,8 @@ class Solution(object):
     def longestCommonPrefix(self, strs):
 
         if not strs:
-            return ""
-    
+            print("")
+
         prefix = strs[0]
 
         for i in range(1, len(strs)):
@@ -12,18 +12,17 @@ class Solution(object):
 
                 prefix = prefix[:-1]
 
-            if not prefix:
-                return ""
-            
-        return prefix
-            
+                if not prefix:
+                    print("")
 
+        return prefix
+
+
+            
 
 solucao = Solution()
-resultado = solucao.longestCommonPrefix(["flower", "flow", "flight"])
+resultado = solucao.longestCommonPrefix(['map', 'mop', 'map'])
 print(resultado)
-
-
 #1 - Pegar os digitos da palavra toda
 
         
